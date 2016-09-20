@@ -1,16 +1,23 @@
-// file: huzza_buzza.cpp
+// file: counter multiplier.cpp
 // written by: alex
-// purpose: to create a buzz
-// forked by aberry5621 
+// purpose: multiply numbers and display in columns
 
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main() {
+	cout << "counter multiplier" << endl;
 
-	int foo = 123;
+	for (int i = 1; i < 5; i++)
+	{
+		cout << setw(4) << i;
+		for (int j = 0; j < 10; j++)
+		{
+			cout << setw(4) <<  i * j;
+		}
+		cout << endl;
+	}
 
-	cout << "huzza buzza ";
-	cout << foo;
 	return 0;
 }
